@@ -21,7 +21,7 @@
         <ul class="dropdown-menu">
           <li><a style="color: #131137;margin-bottom: 8px;" href="addemp.php"> <i class="fa fa-plus"></i> Add New Employee</a></li>
           <li><a style="color: #131137;" href="me.php"> <i class="fa fa-edit"></i> Manage Employee</a></li>
-           <li><a style="color: #131137;margin-top: 8px;" href="alldata.php"> <i class="fa fa-edit"></i> View Employee Data</a></li>
+         <!--  <li><a style="color: #131137;margin-top: 8px;" href="alldata.php"> <i class="fa fa-edit"></i> View Employee Data</a></li> -->
 
            <li><a style="color: #131137;margin-bottom: 8px;margin-top: 8px;" href="addcourse.php"> <i class="fa fa-plus"></i> Add Course</a></li>
           <li><a style="color: #131137;" href="mcourse.php"> <i class="fa fa-edit"></i> Manage Course</a></li>
