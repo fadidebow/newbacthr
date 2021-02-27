@@ -1,8 +1,8 @@
 <?php
 ob_start();
 session_start();
-if($_SESSION['fd']=='')
-header("Location: index.php");
+##if($_SESSION['fd']=='')
+##header("Location: index.php");
 ?>
 <!DOCTYPE html>
 <html>
