@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-unset($_SESSION['fd']);
+$_SESSION['fd']='';
 ?>
 <!DOCTYPE html>
 <html>
