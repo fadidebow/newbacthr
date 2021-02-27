@@ -1,7 +1,8 @@
 <?php
 ob_start();
 session_start();
-if(!isset($_SESSION['fd']))
+##if(!isset($_SESSION['fd']))
+if(empty($_SESSION['fd']))
 header("Location: index.php");
 ?>
 <!DOCTYPE html>
