@@ -92,9 +92,9 @@ $_SESSION['fd']='';
 include'conn.php';
 
 $x=isset($_POST['e'])?$_POST['e']:'';
-$x1=mysqli_real_escape_string($con,$x);
+$x=mysqli_real_escape_string($con,$x);
 $y=isset($_POST['p'])?$_POST['p']:'';
-$y1=mysqli_real_escape_string($con,$y);
+$y=mysqli_real_escape_string($con,$y);
 
 
 if(isset($_POST['bt']))
