@@ -1,12 +1,14 @@
 <?php
 ob_start();
+session_start();
+unset($_SESSION['fd']);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<title>Bact HR</title>
+	<title>test db</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" 
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -90,7 +92,9 @@ ob_start();
 include'conn.php';
 
 $x=isset($_POST['e'])?$_POST['e']:'';
+$x=mysqli_real_escape_string($con,$x);
 $y=isset($_POST['p'])?$_POST['p']:'';
+$y=mysqli_real_escape_string($con,$y);
 
 
 if(isset($_POST['bt']))
@@ -100,11 +104,9 @@ if(isset($_POST['bt']))
 
 	if(mysqli_num_rows($result) >0 )
 	{
-	
-
-	
-		
-		header("Location: admin.php");
+	$row=mysqli_fetch_array($result);
+$_SESSION['fd']=$row['name'];
+header("Location: admin.php");
 
 		
 	}
