@@ -1,7 +1,7 @@
 <?php
 ob_start();
-##session_start();
-##$_SESSION['fd']='';
+session_start();
+$_SESSION['fd']='';
 ?>
 <!DOCTYPE html>
 <html>
@@ -104,8 +104,8 @@ if(isset($_POST['bt']))
 
 	if(mysqli_num_rows($result) >0 )
 	{
-	##$row=mysqli_fetch_array($result);
-##$_SESSION['fd']=$row['name'];
+	$row=mysqli_fetch_array($result);
+$_SESSION['fd']=$row['name'];
 header("Location: admin.php");
 
 		
